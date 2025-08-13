@@ -2,10 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Mangement</title>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
 </head>
 <body>
-    <h1>User Mangement</h1>
+
+<div class="container">
+
+    <!-- Registration Form Section -->
+    <h2>User Registration</h2>
+
+    <form>
+        <div>
+            <label for="Full name"><b>Full name</b></label><br>
+            <input type="text" placeholder="Full name" required>
+        </div>
+        <div>
+             <label for="Email"><b>Email</b></label><br>
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="Select role"><b>Select Role</b></label><br>
+            <select required>
+                <option value="">Select Role</option>
+                <option value="Admin">Admin</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Student">Student</option>
+            </select>
+        </div>
+        <div style="flex: 1 1 100%;">
+            <label for="password"><b>password</b></label><br>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div>
+            <button type="submit">Register User</button>
+        </div>
+        <div>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+
+    <hr style="margin: 30px 0; border-color: #e6b05891;">
+
+    <!-- User Information Table -->
+    <h2>User Information</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hari kiran</td>
+                <td>harikiran8@gmail.com</td>
+                <td>Admin</td>
+                <td>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Satish</td>
+                <td>satish@gmail.com</td>
+                <td>Faculty</td>
+                <td>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ganaraj Patil</td>
+                <td>patil@gmail.com</td>
+                <td>Student</td>
+                <td>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
 </body>
 </html>

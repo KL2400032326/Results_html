@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Mangement</title>
+    <title>Course Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Course Mangement</h1> 
+    <div class="container">
+        <h1 style="text-align: center;">Course Management System</h1>
+
+        
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <table>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>C101</td>
+                    <td>Web Development</td>
+                    <td>Dr. Satish</td>
+                    <td>8 Weeks</td>
+                    <td><button class="action-btn">Enroll</button></td>
+                </tr>
+                <tr>
+                    <td>C102</td>
+                    <td>c-programming</td>
+                    <td>Dr.Anusha</td>
+                    <td>10 Weeks</td>
+                    <td><button class="action-btn">Enroll</button></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Student List -->
+        <section id="students">
+            <h2>Enrolled Students</h2>
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>2400032326</td>
+                    <td>Sangavar Ganaraj</td>
+                    <td>Introduction to AI</td>
+                </tr>
+                <tr>
+                    <td>2400032666</td>
+                    <td>Ashok</td>
+                    <td>Web Development</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Instructor List -->
+        <section id="instructors">
+            <h2>Instructors</h2>
+           <table>
+            <tr>
+             <th>Instructor ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+            </tr>
+ <tr>
+                    <td>4528</td>
+                    <td>Mallesh</td>
+                    <td>Introduction to AI</td>
+                </tr>
+                <tr>
+                    <td>2456</td>
+                    <td>Satish</td>
+                    <td>Web Development</td>
+                </tr>           </table>
+        </section>
+
+        <!-- Add Course Form -->
+        <section id="add-course">
+            <h2>Add New Course</h2>
+            <form>
+                <input type="text" name="course_id" placeholder="Course ID" required>
+                <input type="text" name="course_name" placeholder="Course Name" required>
+                <input type="text" name="instructor" placeholder="Instructor" required>
+                <input type="text" name="duration" placeholder="Duration" required>
+                <button type="submit">Add Course</button>
+            </form>
+        </section>
+    </div>
 </body>
 </html>

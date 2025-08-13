@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+    <title>Result Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Result</h1>
+    <div class="container">
+        <h1 style="text-align: center;">Result Management System</h1>
+
+        
+        <section id="results">
+            <h2>Student Results</h2>
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>S001</td>
+                    <td>John Doe</td>
+                    <td>Mathematics</td>
+                    <td>88</td>
+                    <td>A</td>
+                    <td>
+                        <button class="action-btn">Update</button>
+                        <button class="action-btn reset-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>S002</td>
+                    <td>Jane Smith</td>
+                    <td>Physics</td>
+                    <td>76</td>
+                    <td>B+</td>
+                    <td>
+                        <button class="action-btn">Update</button>
+                        <button class="action-btn reset-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>S003</td>
+                    <td>Michael Brown</td>
+                    <td>Computer Science</td>
+                    <td>94</td>
+                    <td>A+</td>
+                    <td>
+                        <button class="action-btn">Update</button>
+                        <button class="action-btn reset-btn">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Student List -->
+        <section id="students">
+            <h2>Registered Students</h2>
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>S001</td>
+                    <td>John Doe</td>
+                    <td>BSc Computer Science</td>
+                </tr>
+                <tr>
+                    <td>S002</td>
+                    <td>Jane Smith</td>
+                    <td>BSc Physics</td>
+                </tr>
+                <tr>
+                    <td>S003</td>
+                    <td>Michael Brown</td>
+                    <td>BSc AI & ML</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Add Result Form -->
+        <section id="add-result">
+            <h2>Add New Result</h2>
+            <form>
+                <input type="text" name="student_id" placeholder="Student ID" required>
+                <input type="text" name="student_name" placeholder="Student Name" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <input type="number" name="marks" placeholder="Marks" required>
+                <input type="text" name="grade" placeholder="Grade" required>
+                <button type="submit">Add Result</button>
+            </form>
+        </section>
+
+        <!-- Update Result Form -->
+        <section id="update-result">
+            <h2>Update Result</h2>
+            <form>
+                <input type="text" name="student_id" placeholder="Student ID" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <input type="number" name="new_marks" placeholder="New Marks" required>
+                <input type="text" name="new_grade" placeholder="New Grade" required>
+                <button type="submit">Update Result</button>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
